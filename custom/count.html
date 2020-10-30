@@ -1,0 +1,17 @@
+<h1>Counted</h1>
+<h2>You typed {{ count }} words</h2>
+<h2>Your Text</h2>
+<h3> {{ input }} </h3>
+
+<h3>
+
+    {% for word, count in dictionary %}
+
+    {{ word }} - {{ count }}
+    <br>
+    {% endfor %}
+
+
+</h3>
+
+<a href="{% url 'home' %}">Back to Home</a>
